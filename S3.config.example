@@ -1,0 +1,3 @@
+Access_key_id=<AWS access Key ID> 
+Secret_access_key=<aws_secret_access_key>
+bucketname=<s3 bucket name>
