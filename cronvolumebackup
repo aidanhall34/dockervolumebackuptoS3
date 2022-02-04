@@ -1,0 +1,4 @@
+# m h d m mon dow   command
+SHELL=/bin/sh
+PATH=/sbin:/usr/sbin:/bin:/usr/bin
+0 0 * * * root /root/s3backuputility.py -c /root/S3.config -b -v <Volume name>  <Volume name>
