@@ -63,12 +63,6 @@ args.add_argument('-d', '--date', help='Restore a backup taken on a spefic date'
 args.add_argument('-c', '--config', help='Speficy a config file location')
 args = args.parse_args()
 
-#args.config = '/root/S3.config'
-#args.backup = False
-#args.restore = True
-#args.date = '04_02_2022'
-#args.volumes = ['ah34_vw-data'] 
-
 def main():
     if args.config == None:
         print('Please provide a config file')
