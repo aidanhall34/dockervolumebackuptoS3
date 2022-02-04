@@ -28,3 +28,11 @@ If you specify restore, you must provide a date with -d in %d%d_%m%m_%Y%Y%Y%Y fo
 ## Personal setup
 I run this as a cron job. After creating and setting up the config file, I edit the cronvolumebackup.example to include the volumnes I want backed up.
 After adding those I put it into /etc/cron.d/ and reload cron. I have my s3 bucket set up to retain backups for 30 days.
+
+# Examples
+
+Run the following after setting up the config file, run:
+```bash
+pip install -r requirements.txt
+<path to script>/s3backuputility.py -c /<path to config file>/S3.config -b -v <Volume name>  <Volume name>
+```
